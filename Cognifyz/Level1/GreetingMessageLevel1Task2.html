@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting Alert</title>
+</head>
+<body>
+
+    <script>
+        function displayGreeting() {
+            var currentTime = new Date();
+            var currentHour = currentTime.getHours();
+
+            var greeting;
+
+            if (currentHour < 12) {
+                greeting = 'Good morning everyone';
+            } else if (currentHour < 18) {
+                greeting = 'Good afternoon viewers';
+            } else {
+                greeting = 'Good evening thank you for visiting';
+            }
+
+            alert(greeting);
+        }
+
+    
+        window.onload = displayGreeting;
+    </script>
+
+</body>
+</html>
